@@ -1,10 +1,21 @@
+body{
+  margin-top: 0;
+  background: #CCC;
+
+}
 .App {
   text-align: center;
+  background: #CCC;
+
+}
+.cont {
+  color: red;
+  font-size: 18px;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  animation: App-logo-spin infinite 30s linear;
+  height: 50vmin;
 }
 
 .App-header {
