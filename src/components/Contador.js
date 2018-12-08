@@ -2,9 +2,21 @@ import React from 'react';
 
 class Contador extends React.Component {
 
-    state = {
-        numero:0
+
+    static defaultProps = {
+        tempo: 1000,
+        numero: 0
     }
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            numero: props.numero,
+        }
+    }
+
+   
 
     componentDidMount() {
         this.interval = setInterval(() => {
@@ -12,6 +24,12 @@ class Contador extends React.Component {
                 numero: this.state.numero + 1
             })
         }, this.props.tempo);
+    }
+
+    componentDidUpdate(oldProps, oldState) {
+        console.log('componentDidUpdate');
+        console.log('numero anterior: ', oldState.numero);
+        console.log('numero atual: ', this.state.numero);
     }
 
     componentWillUnmount() {
