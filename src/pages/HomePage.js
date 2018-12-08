@@ -15,7 +15,7 @@ class HomePage extends Component {
                  <Button color= "success">Enviar</Button>
                  <Button color= "danger">Cancelar</Button>
           <Artigo nome="Evandro"texto="Professor"> </Artigo>
-          <Artigo nome="China"texto="torrone"> </Artigo>
+          <Artigo nome="Eduardo"texto="Filho"> </Artigo>
           
           <div className="cont"><Contador tempo={500} /></div>
           <Contador tempo={700} />
